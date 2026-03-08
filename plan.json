@@ -1,0 +1,37 @@
+{
+  "task": "Create a new Spring Boot + React starter project with minimal health endpoint and a simple React home page. Generate README with run instructions.",
+  "steps": [
+    {
+      "role": "Planner",
+      "input": "Design the structure of a full-stack Spring Boot (backend) + React (frontend) application. Define: - Project root directory - Backend: Spring Boot app with /actuator/health endpoint - Frontend: Create React App with a simple home page - README.md with run instructions for both backend and frontend"
+    },
+    {
+      "role": "Coder",
+      "input": "Generate the complete project structure including: - Spring Boot backend (Java) with minimal health check via Actuator - React frontend with index.html, App.js, and basic styling - Package.json for React - README.md with clear run instructions for both parts"
+    },
+    {
+      "role": "Executor",
+      "input": "Create the project files in a local directory: - /backend/src/main/java/com/example/demo/DemoApplication.java (Spring Boot app) - /backend/src/main/resources/application.yml (enable actuator) - /frontend/package.json, src/App.js, public/index.html - README.md with run commands"
+    },
+    {
+      "role": "Reviewer",
+      "input": "Review all generated files for correctness: - Spring Boot app starts and exposes /actuator/health - React app renders a simple home page - README has accurate instructions to run both backend (mvn spring-boot:run) and frontend (npm start)"
+    },
+    {
+      "role": "Summarizer",
+      "input": "Summarize the project structure, key files created, and final output artifacts. Confirm all steps completed successfully."
+    }
+  ],
+  "artifacts": [
+    "backend/src/main/java/com/example/demo/DemoApplication.java",
+    "backend/src/main/resources/application.yml",
+    "frontend/package.json",
+    "frontend/src/App.js",
+    "frontend/public/index.html",
+    "README.md"
+  ],
+  "git": {
+    "repo": "",
+    "public": false
+  }
+}
